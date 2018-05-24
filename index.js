@@ -16,13 +16,12 @@ button3.onclick = changeColor("blue")
 
 increment =  function (event) {
         var i = parseInt(event.target.innerHTML)
-        event.target.innerHTML = i+1
+        event.target.innerHTML = i + 1
 
     }
 
-
 buttons = document.getElementsByClassName("increment-button")
-for (var i = 0 ; i< buttons.length; i++) {
+for (var i = 0 ; i < buttons.length; i++) {
     var button = buttons[i];
     button.addListener("click", increment)
 }
